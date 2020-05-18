@@ -14,7 +14,7 @@ def reverse_list():
         a.append(i)
     a.reverse()
     return a
-def sum_a(a):
+def sum_a(a):  #for left swipe
     b = reverse_list()
     for k in range(n):
         d = -1
@@ -28,7 +28,7 @@ def sum_a(a):
                     a[k][i+1]=0
                     d=i
     return a
-def sum_d(a):
+def sum_d(a):  #for right swipe
     b = reverse_list()
     for k in range(n):
         d = n+1
@@ -46,7 +46,7 @@ def sum_d(a):
                     a[k][i-1]=0
                     d=i
     return a
-def sum_w(a):
+def sum_w(a):  #for swipe up
     b = reverse_list()
     for k in range(n):
         d = -1
@@ -60,7 +60,7 @@ def sum_w(a):
                     a[i+1][k]=0
                     d=i
     return a
-def sum_s(a):
+def sum_s(a):  #for swipe down
     b = reverse_list()
     for k in range(n):
         d = n+1
@@ -124,13 +124,13 @@ while d<w:
             flag = False
         else:
             b = input('Enter direction key a/s/d/w: ')
-            if b == 'a':
+            if b == 'a' or b == 'A':
                 c = c_a    
-            elif b == 's':
+            elif b == 's' or b == 'S':
                 c = c_s    
-            elif b == 'd':
+            elif b == 'd' or b == 'D':
                 c = c_d    
-            elif b == 'w':
+            elif b == 'w' or b == 'W':
                 c = c_w   
             else:
                 print('Please enter valid key')
