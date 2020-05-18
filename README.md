@@ -1,10 +1,11 @@
-#ABOUT : This is recreation of the game 2048 coded in python.
+# ABOUT : 
+This is recreation of the game 2048 coded in python.
 
-#GAME INFO :
+# GAME INFO :
 This version of 2048 game works on terminal.
 It is dynamic i.e user can enter the required board size and winning value.
 
-#Playing the game:
+# Playing the game:
 Player have to input the size of gameboard and winning value.
 If the winning value is not an exponent of 2 then it will get approximated to nearest exponent of 2.
 By moving the tiles to left,right,up or down you have to score upto the target(w) set by you.
