@@ -8,6 +8,12 @@ flag1 = True
 import os
 import copy
 import random
+while k<=w:
+    k = 2**i
+    i+=1
+if k!= w:
+    w = 2**(i-2)
+    print('Winning number is approximated as',w)
 def reverse_list():
     a = []
     for i in range(n):
@@ -103,6 +109,9 @@ c = random2_spawn(c)
 os.system('cls')
 for row in c:
     print(row)
+if w==2:
+    print('You Won')
+    flag = False
 while d<w:
     if flag == True:
         k = 0
